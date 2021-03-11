@@ -66,7 +66,7 @@ int randomP(node *& st, node *& fn) {
 }
 
 void hoarSort(node *& l, node *& r) {  // [l, r]
-    if (l == r || l->next == r && l->data <= r->data) return;
+    if (l == r) return;
     int p = randomP(l, r);
     node* forlast = r->next;
 
